@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#448135"
+    android:padding="10dp">
+
+    <ImageView
+        android:id="@+id/back_btn"
+        android:layout_width="48dp"
+        android:layout_height="30dp"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="10dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:src="@drawable/back_arrow" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/back_btn"
+        android:layout_marginTop="208dp"
+        android:background="@null"
+        android:textColorHint="@color/black">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/et_add_task"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter task"
+            android:textSize="18sp"
+            android:textColor="@color/black"
+            android:inputType="textMultiLine"
+            android:maxLines="10"
+            android:minLines="1"
+        android:gravity="center|start"
+        android:scrollbars="vertical"
+        android:overScrollMode="always"
+        android:layout_marginBottom="10dp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/btnSaveTask"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textInputLayout"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="18dp"
+        android:layout_marginEnd="1dp"
+        android:backgroundTint="@color/black"
+        android:text="Save Task"
+        android:textColor="@color/white" />
+</RelativeLayout>
